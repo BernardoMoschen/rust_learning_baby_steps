@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "./rust-book-pt-br",
+    },
+    {
+      "path": "./projects",
+    },
+    {
+      "path": "./rustlings",
+    },
+  ],
+}

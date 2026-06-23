@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "projects/*",
+    "rustlings",
+    "theBook",    # If you clone rustlings directly here
+]
