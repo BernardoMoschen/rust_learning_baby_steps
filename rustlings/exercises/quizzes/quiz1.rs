@@ -11,9 +11,30 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(apples_quantity: i64) -> i64 {
+    const DEFAULT_APPLE_PRICE: i64 = 2;
+
+    if apples_quantity <= 40 {
+        apples_quantity * DEFAULT_APPLE_PRICE
+    } else {
+        apples_quantity * (DEFAULT_APPLE_PRICE - 1)
+    }
+}
 
 fn main() {
-    // You can optionally experiment here.
+    fn calculate_price_of_apples(apples_quantity: i64) -> i64 {
+        const DEFAULT_APPLE_PRICE: i64 = 2;
+
+        if apples_quantity <= 40 {
+            apples_quantity * DEFAULT_APPLE_PRICE
+        } else {
+            apples_quantity * (DEFAULT_APPLE_PRICE - 1)
+        }
+    }
+
+    println!("{}", calculate_price_of_apples(30));
+    println!("{}", calculate_price_of_apples(40));
+    println!("{}", calculate_price_of_apples(42));
 }
 
 // Don't change the tests!
