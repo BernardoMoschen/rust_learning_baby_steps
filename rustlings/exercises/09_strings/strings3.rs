@@ -1,13 +1,38 @@
 fn trim_me(input: &str) -> &str {
+    input.trim()
     // TODO: Remove whitespace from both ends of a string.
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There are multiple ways to do this.
+
+    // let mut owned_string = input.to_owned();
+    // owned_string.insert_str(input.len(), " world!");
+    // owned_string
+
+    // let mut s = input.to_owned();
+    // s.push_str(" world!");
+    // s
+
+    // let mut owned_string_pushed = input.to_owned();
+    // owned_string_pushed + " world!"
+
+    // [input, " world!"].concat()
+
+    // [input, "world!"].join(" ")
+
+    // let mut s = input.to_owned();
+    // s.extend([" world!"]);
+    // s
+
+    format!("{input} world!")
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons".
+    input.replace("cars", "balloons")
+
+    // input.replacen("cars", "balloons", 1)
 }
 
 fn main() {
